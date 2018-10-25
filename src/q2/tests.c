@@ -21,5 +21,8 @@ void runTests(){
   traverse(l);
   printf("\n");
 
+  //test length
+  printf("List is %d long. \n", length(l));
+
   printf("\nTests complete.\n");
 }
