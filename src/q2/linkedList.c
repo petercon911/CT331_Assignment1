@@ -104,5 +104,8 @@ void enqueue(listElement** list, char* data, size_t size) {
 
 //Dequeue an element from the tail of the list
 listElement* dequeue(listElement* list) {
+	listElement *temp = *list;
+	*list = temp->next;
+	return temp;
 
 }
